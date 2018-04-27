@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    tools:context="com.example.android.myfinalprototype.ShoppingListActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <Spinner
+            android:id="@+id/my_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/shoppingTitle"
+        android:background="@android:drawable/alert_light_frame"
+        android:fontFamily="cursive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_centerHorizontal="true"
+        android:text="Shopping List"
+        android:textSize="30sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <EditText
+        android:id="@+id/shoppingList"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText"
+        android:background="@android:drawable/editbox_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:nextFocusForward="@id/addButton"
+        android:layout_below="@+id/shoppingTitle"
+        android:ems="10"
+        android:hint="Enter items..."
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/addButton"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/shoppingList"
+        android:layout_marginStart="14dp"
+        android:text="ADD" />
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/addButton"
+    android:orientation="vertical">
+
+    <ListView
+        android:background="@color/colorWhite"
+        android:id="@+id/shoppingListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+</RelativeLayout>

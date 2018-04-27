@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    tools:context="com.example.android.myfinalprototype.WeeklyTaskActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="56dp"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="Monday"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/mondayTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/monday"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Enter tasks here"
+                android:inputType="textMultiLine"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText" />
+
+            <TextView
+                android:id="@+id/tuesday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mondayTasks"
+                android:layout_centerHorizontal="true"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="Tuesday"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/tuesdayTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tuesday"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:inputType="textMultiLine"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText" />
+
+            <TextView
+                android:id="@+id/wednesday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tuesdayTasks"
+                android:layout_centerHorizontal="true"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="Wednesday"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/wednesdayTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/wednesday"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:inputType="textMultiLine"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText" />
+
+            <TextView
+                android:id="@+id/thursday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wednesdayTasks"
+                android:layout_centerHorizontal="true"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="Thursday"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/thursdayTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/thursday"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:inputType="textMultiLine"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText" />
+
+            <TextView
+                android:id="@+id/friday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thursdayTasks"
+                android:layout_centerHorizontal="true"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="Friday"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/fridayTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/friday"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:inputType="textMultiLine"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText" />
+
+            <TextView
+                android:id="@+id/saturday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fridayTasks"
+                android:layout_centerHorizontal="true"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="Saturday"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/saturdayTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/saturday"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:inputType="textMultiLine"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText" />
+
+            <TextView
+                android:id="@+id/sunday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/saturdayTasks"
+                android:layout_centerHorizontal="true"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="Sunday"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/sundayTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/sunday"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:nextFocusForward="@id/task_save"
+                android:inputType="textMultiLine"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/task_save"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/my_toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="9dp"
+        android:onClick="saveTaskEntries"
+        android:text="SAVE"
+        android:visibility="visible" />
+
+    <Spinner
+        android:id="@+id/my_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        android:entries="@android:drawable/alert_light_frame"
+        android:visibility="visible" />
+
+
+
+
+</RelativeLayout>

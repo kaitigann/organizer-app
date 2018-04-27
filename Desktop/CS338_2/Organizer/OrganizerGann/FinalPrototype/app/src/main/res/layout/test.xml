@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.myfinalprototype.MonthlyBudgetActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:background="@drawable/ic_launcher_background">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_launcher_background">
+
+
+            <TextView
+                android:id="@+id/incomeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="55dp"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="INCOME"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/incomeAmt1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/nameOfIncome1"
+                android:layout_alignBottom="@+id/nameOfIncome1"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/incomeTitle"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/nameOfIncome1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/incomeTitle"
+                android:layout_toStartOf="@+id/monthlyIncomeAmtTitle"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Enter type of income..."
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/monthlyIncomeAmtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/incomeAmt1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="55dp"
+                android:layout_toEndOf="@+id/incomeTitle"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="MONTHLY AMOUNT"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nameOfIncome2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/nameOfIncome1"
+                android:layout_toStartOf="@+id/incomeAmt1"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/incomeAmt2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/nameOfIncome2"
+                android:layout_alignBottom="@+id/nameOfIncome2"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/nameOfIncome1"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/totalIncomeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/fixedExpenseTitle"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/nameOfIncome2"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="TOTAL INCOME"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalIncomeAmt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/incomeAmt2"
+                android:layout_toEndOf="@+id/totalIncomeTitle"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="AMOUNT=                 "
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fixedExpenseTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/totalIncomeTitle"
+                android:layout_toStartOf="@+id/monthlyIncomeAmtTitle"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="FIXED EXPENSES"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/monthlyFixedExpenseTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/totalIncomeAmt"
+                android:layout_toEndOf="@+id/totalIncomeTitle"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="MONTHLY AMOUNT"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fixedExpenseName1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/fixedExpenseTitle"
+                android:layout_toStartOf="@+id/monthlyFixedExpenseTitle"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:hint="Enter type of expense..."
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/fixedAmt1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/fixedExpenseName2"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/fixedExpenseTitle"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/fixedExpenseName2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/fixedExpenseName1"
+                android:layout_toStartOf="@+id/fixedAmt1"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/fixedAmt2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/fixedAmt1"
+                android:layout_toEndOf="@+id/fixedExpenseName1"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/fixedExpenseName3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/fixedExpenseName2"
+                android:layout_toStartOf="@+id/fixedAmt2"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/fixedAmt3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/fixedExpenseName2"
+                android:layout_toEndOf="@+id/fixedExpenseName3"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/fixedExpenseName4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/fixedExpenseName3"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/fixedExpenseName3"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/fixedAmt4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/fixedAmt3"
+                android:layout_toEndOf="@+id/fixedExpenseName3"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/fixedExpenseName5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/fixedExpenseName4"
+                android:layout_toStartOf="@+id/fixedAmt5"
+                android:ems="10"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/fixedAmt5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/fixedAmt4"
+                android:layout_toEndOf="@+id/fixedExpenseName4"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/fixedExpenseName6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/fixedExpenseName5"
+                android:layout_toStartOf="@+id/fixedAmt6"
+                android:ems="10"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/fixedAmt6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/fixedAmt5"
+                android:layout_below="@id/fixedAmt5"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:background="@android:drawable/editbox_background"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/fixedExpenseName7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/fixedExpenseName6"
+                android:layout_toStartOf="@+id/fixedAmt7"
+                android:ems="10"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/fixedAmt7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/fixedAmt6"
+                android:layout_below="@+id/fixedAmt6"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:background="@android:drawable/editbox_background"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/totalFixedTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/fixedExpenseName7"
+                android:layout_toStartOf="@+id/fixedAmt7"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="TOTAL FIXED EXPENSES"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalFixedAmt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/fixedAmt7"
+                android:layout_toEndOf="@+id/fixedExpenseName7"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="AMOUNT=                 "
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/variableExpenseTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/totalFixedTitle"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/totalFixedTitle"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="VARIABLE EXPENSES"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/monthlyVariableExpenseTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/totalFixedAmt"
+                android:layout_toEndOf="@+id/totalFixedTitle"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="MONTHLY AMOUNT"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/variableExpenseName1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/variableExpenseTitle"
+                android:layout_toStartOf="@+id/monthlyVariableExpenseTitle"
+                android:ems="10"
+                android:hint="Enter type of expense..."
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/variableAmt1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/monthlyVariableExpenseTitle"
+                android:layout_toEndOf="@+id/variableExpenseTitle"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/variableExpenseName2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/variableExpenseName1"
+                android:layout_toStartOf="@+id/variableAmt1"
+                android:ems="10"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/variableAmt2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/variableAmt1"
+                android:layout_toEndOf="@+id/variableExpenseName1"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:background="@android:drawable/editbox_background"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/variableExpenseName3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/variableExpenseName2"
+                android:layout_toStartOf="@+id/variableAmt2"
+                android:ems="10"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/variableAmt3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/variableAmt2"
+                android:layout_toEndOf="@+id/variableExpenseName2"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:background="@android:drawable/editbox_background"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/variableExpenseName4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/variableExpenseName3"
+                android:layout_toStartOf="@+id/variableAmt3"
+                android:ems="10"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/variableAmt4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/variableAmt3"
+                android:layout_toEndOf="@+id/variableExpenseName3"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:background="@android:drawable/editbox_background"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/variableExpenseName5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/variableExpenseName4"
+                android:layout_toStartOf="@+id/variableAmt4"
+                android:ems="10"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/variableAmt5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/variableAmt4"
+                android:layout_toEndOf="@+id/variableExpenseName6"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:background="@android:drawable/editbox_background"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/variableExpenseName6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/variableExpenseName5"
+                android:layout_toStartOf="@+id/variableAmt7"
+                android:ems="10"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/variableAmt6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/variableAmt5"
+                android:layout_toEndOf="@+id/variableExpenseName6"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:background="@android:drawable/editbox_background"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/variableExpenseName7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/variableExpenseName6"
+                android:layout_toStartOf="@+id/totalVariableAmt"
+                android:ems="10"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/variableAmt7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/variableAmt6"
+                android:layout_toEndOf="@+id/variableExpenseName7"
+                android:ems="10"
+                android:nextFocusForward="@id/budget_save"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:background="@android:drawable/editbox_background"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/totalVariableTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/variableExpenseName7"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="TOTAL VARIABLE EXPENSES"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalVariableAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/variableExpenseName7"
+                android:layout_toEndOf="@+id/totalVariableTitle"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="AMOUNT=                 "
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalExpensesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/totalVariableTitle"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/totalVariableTitle"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="TOTAL EXPENSES"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalExpensesAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/totalVariableAmt"
+                android:layout_toEndOf="@+id/totalVariableTitle"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="AMOUNT=                 "
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalSavingsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/totalExpensesTitle"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/totalExpensesTitle"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="TOTAL SAVINGS"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalSavingsAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/totalExpensesAmt"
+                android:layout_toEndOf="@+id/totalExpensesTitle"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="AMOUNT=                 "
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+    </android.support.v7.widget.Toolbar>
+
+    <Spinner
+        android:id="@+id/my_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/budget_save"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/budget_save"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/my_toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:onClick="saveBudgetEntries"
+        android:text="SAVE"
+        android:visibility="visible" />
+
+
+</android.support.constraint.ConstraintLayout>

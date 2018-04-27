@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.myfinalprototype.MealPlanActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher_background">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mondayPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="56dp"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="Monday"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/mondayMeals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/mondayPlan"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:hint="Enter meals here"
+                android:inputType="textMultiLine"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tuesdayPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/mondayMeals"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="Tuesday"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/tuesdayMeals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tuesdayPlan"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/wednesdayPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tuesdayMeals"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="Wednesday"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/wednesdayMeals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/wednesdayPlan"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/thursdayPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/wednesdayMeals"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="Thursday"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/thursdayMeals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/thursdayPlan"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fridayPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/thursdayMeals"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="Friday"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/fridayMeals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/fridayPlan"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/saturdayPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/fridayMeals"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="Saturday"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/saturdayMeals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/saturdayPlan"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sundayPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/saturdayMeals"
+                android:background="@android:drawable/alert_light_frame"
+                android:fontFamily="cursive"
+                android:text="Sunday"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/sundayMeals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/sundayPlan"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:nextFocusForward="@+id/meal_plan_save"
+                android:inputType="textMultiLine"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.EditText"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorAccent"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" >
+
+        </android.support.v7.widget.Toolbar>
+
+    <Spinner
+        android:id="@+id/my_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/meal_plan_save"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/meal_plan_save"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/my_toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:onClick="saveMealEntries"
+        android:text="SAVE"
+        android:visibility="visible" />
+
+</RelativeLayout>
